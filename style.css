@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+#hero {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007fff;
+}
+
+.nav-btn {
+    position: absolute;
+    left: 55px;
+}
+
+.nav-list {
+    position: absolute;
+    list-style: none;
+    text-align: right;
+    bottom: 0;
+    top: 40px;
+    width: 200px;
+    background: white;
+    padding-right: 1rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-list > li {
+    padding: 0.5rem;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    margin: 0.25rem 0;
+    cursor: pointer;
+}
+
+.nav-list > li:hover {
+    background-color: rgb(235, 232, 232);
+    font-weight: bold;
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: gray;
+}
+
+.container {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+#desc-container {
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0px 0px 2px lightgray; */
+    margin: 1rem 0;
+    color: gray;
+}
+
+#user-name-ip{
+    width: calc(100% - 1rem);
+    outline: none;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.6rem;
+    color: #007fff;
+    background: white;
+    border: 1px solid #007fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background: #007fff;
+    border: 1px solid #007fff;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#btn-get-user{
+    width: 100%;
+    cursor: pointer;
+    padding: 0.6rem;
+    border: 1px solid #007fff;
+    background: #007fff;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+#btn-panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+@media screen and (min-width: 1055px){
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-list {
+        transform: translateX(0%) !important;
+    }
+}
